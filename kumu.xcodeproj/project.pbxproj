@@ -3,17 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1A60CF7C7915D2BE7F75E4 /* Pods_kumuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E06BBFFDB1944AA24E29099 /* Pods_kumuTests.framework */; };
 		51D4E4FA2395287000574DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E4F92395287000574DD0 /* AppDelegate.swift */; };
-		51D4E4FC2395287000574DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E4FB2395287000574DD0 /* ViewController.swift */; };
 		51D4E4FF2395287000574DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E4FD2395287000574DD0 /* Main.storyboard */; };
 		51D4E5012395287300574DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E5002395287300574DD0 /* Assets.xcassets */; };
 		51D4E5042395287300574DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E5022395287300574DD0 /* LaunchScreen.storyboard */; };
 		51D4E50F2395287300574DD0 /* kumuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E50E2395287300574DD0 /* kumuTests.swift */; };
 		51D4E51A2395287300574DD0 /* kumuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E5192395287300574DD0 /* kumuUITests.swift */; };
+		51D4E56623953A7200574DD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E56523953A7200574DD0 /* GoogleService-Info.plist */; };
+		51D4E56723953A7200574DD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E56523953A7200574DD0 /* GoogleService-Info.plist */; };
+		51D4E56823953A7200574DD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E56523953A7200574DD0 /* GoogleService-Info.plist */; };
+		51D4E56A2395550A00574DD0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E5692395550A00574DD0 /* LoginVC.swift */; };
+		51D4E56C2395557700574DD0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E56B2395557700574DD0 /* ProfileVC.swift */; };
+		51D4E56E2395558C00574DD0 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E56D2395558C00574DD0 /* SignupVC.swift */; };
+		51D4E5702395B11500574DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E56F2395B11500574DD0 /* Helper.swift */; };
+		826EDC2E7FAC8F9C295B0965 /* Pods_kumu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1203862D90FA7F8F63AB5469 /* Pods_kumu.framework */; };
+		F2D5CD9D2ADDD51120C07387 /* Pods_kumu_kumuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F4CBC1DDA245359F16570 /* Pods_kumu_kumuUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054F4CBC1DDA245359F16570 /* Pods_kumu_kumuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kumu_kumuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E06BBFFDB1944AA24E29099 /* Pods_kumuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kumuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1203862D90FA7F8F63AB5469 /* Pods_kumu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kumu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		234ED963A7CBC70339F7A827 /* Pods-kumu-kumuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumu-kumuUITests.debug.xcconfig"; path = "Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51D4E4F62395287000574DD0 /* kumu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kumu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D4E4F92395287000574DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51D4E4FB2395287000574DD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51D4E4FE2395287000574DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51D4E5002395287300574DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51D4E5032395287300574DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,16 @@
 		51D4E5152395287300574DD0 /* kumuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kumuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D4E5192395287300574DD0 /* kumuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kumuUITests.swift; sourceTree = "<group>"; };
 		51D4E51B2395287300574DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D4E56523953A7200574DD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51D4E5692395550A00574DD0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		51D4E56B2395557700574DD0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		51D4E56D2395558C00574DD0 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		51D4E56F2395B11500574DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		70152BE1BF5A2A3DBFDFE100 /* Pods-kumuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumuTests.release.xcconfig"; path = "Target Support Files/Pods-kumuTests/Pods-kumuTests.release.xcconfig"; sourceTree = "<group>"; };
+		7AEDF3A767481709121576EC /* Pods-kumuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumuTests.debug.xcconfig"; path = "Target Support Files/Pods-kumuTests/Pods-kumuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		869759CB47A39563691A2CBF /* Pods-kumu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumu.debug.xcconfig"; path = "Target Support Files/Pods-kumu/Pods-kumu.debug.xcconfig"; sourceTree = "<group>"; };
+		B1CD816354710D451D5BB52D /* Pods-kumu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumu.release.xcconfig"; path = "Target Support Files/Pods-kumu/Pods-kumu.release.xcconfig"; sourceTree = "<group>"; };
+		C3884F13BC8B9A68B516A726 /* Pods-kumu-kumuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumu-kumuUITests.release.xcconfig"; path = "Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826EDC2E7FAC8F9C295B0965 /* Pods_kumu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1A60CF7C7915D2BE7F75E4 /* Pods_kumuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D5CD9D2ADDD51120C07387 /* Pods_kumu_kumuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F76161AA3FB0021155B762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1203862D90FA7F8F63AB5469 /* Pods_kumu.framework */,
+				054F4CBC1DDA245359F16570 /* Pods_kumu_kumuUITests.framework */,
+				0E06BBFFDB1944AA24E29099 /* Pods_kumuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51D4E4ED2395287000574DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				51D4E50D2395287300574DD0 /* kumuTests */,
 				51D4E5182395287300574DD0 /* kumuUITests */,
 				51D4E4F72395287000574DD0 /* Products */,
+				55E3DA920AD5996B26ADD0F9 /* Pods */,
+				14F76161AA3FB0021155B762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +135,15 @@
 			isa = PBXGroup;
 			children = (
 				51D4E4F92395287000574DD0 /* AppDelegate.swift */,
-				51D4E4FB2395287000574DD0 /* ViewController.swift */,
 				51D4E4FD2395287000574DD0 /* Main.storyboard */,
+				51D4E56F2395B11500574DD0 /* Helper.swift */,
+				51D4E56D2395558C00574DD0 /* SignupVC.swift */,
+				51D4E56B2395557700574DD0 /* ProfileVC.swift */,
 				51D4E5002395287300574DD0 /* Assets.xcassets */,
 				51D4E5022395287300574DD0 /* LaunchScreen.storyboard */,
 				51D4E5052395287300574DD0 /* Info.plist */,
+				51D4E56523953A7200574DD0 /* GoogleService-Info.plist */,
+				51D4E5692395550A00574DD0 /* LoginVC.swift */,
 			);
 			path = kumu;
 			sourceTree = "<group>";
@@ -125,6 +166,19 @@
 			path = kumuUITests;
 			sourceTree = "<group>";
 		};
+		55E3DA920AD5996B26ADD0F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				869759CB47A39563691A2CBF /* Pods-kumu.debug.xcconfig */,
+				B1CD816354710D451D5BB52D /* Pods-kumu.release.xcconfig */,
+				234ED963A7CBC70339F7A827 /* Pods-kumu-kumuUITests.debug.xcconfig */,
+				C3884F13BC8B9A68B516A726 /* Pods-kumu-kumuUITests.release.xcconfig */,
+				7AEDF3A767481709121576EC /* Pods-kumuTests.debug.xcconfig */,
+				70152BE1BF5A2A3DBFDFE100 /* Pods-kumuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51D4E51E2395287300574DD0 /* Build configuration list for PBXNativeTarget "kumu" */;
 			buildPhases = (
+				AEB45FDC14EEC9AC0B4F8B19 /* [CP] Check Pods Manifest.lock */,
 				51D4E4F22395287000574DD0 /* Sources */,
 				51D4E4F32395287000574DD0 /* Frameworks */,
 				51D4E4F42395287000574DD0 /* Resources */,
+				8123824ACF3E2A232B337511 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51D4E5212395287300574DD0 /* Build configuration list for PBXNativeTarget "kumuTests" */;
 			buildPhases = (
+				1425F53C459649CB94442D7C /* [CP] Check Pods Manifest.lock */,
 				51D4E5062395287300574DD0 /* Sources */,
 				51D4E5072395287300574DD0 /* Frameworks */,
 				51D4E5082395287300574DD0 /* Resources */,
@@ -167,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51D4E5242395287300574DD0 /* Build configuration list for PBXNativeTarget "kumuUITests" */;
 			buildPhases = (
+				AAEB052F746FCBA644796898 /* [CP] Check Pods Manifest.lock */,
 				51D4E5112395287300574DD0 /* Sources */,
 				51D4E5122395287300574DD0 /* Frameworks */,
 				51D4E5132395287300574DD0 /* Resources */,
+				6FC556923DB3EB777702BE5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D4E5042395287300574DD0 /* LaunchScreen.storyboard in Resources */,
+				51D4E56623953A7200574DD0 /* GoogleService-Info.plist in Resources */,
 				51D4E5012395287300574DD0 /* Assets.xcassets in Resources */,
 				51D4E4FF2395287000574DD0 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D4E56723953A7200574DD0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,17 +307,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D4E56823953A7200574DD0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1425F53C459649CB94442D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kumuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC556923DB3EB777702BE5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8123824ACF3E2A232B337511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kumu/Pods-kumu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kumu/Pods-kumu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kumu/Pods-kumu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAEB052F746FCBA644796898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kumu-kumuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB45FDC14EEC9AC0B4F8B19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kumu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51D4E4F22395287000574DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D4E4FC2395287000574DD0 /* ViewController.swift in Sources */,
+				51D4E56E2395558C00574DD0 /* SignupVC.swift in Sources */,
+				51D4E56C2395557700574DD0 /* ProfileVC.swift in Sources */,
+				51D4E5702395B11500574DD0 /* Helper.swift in Sources */,
+				51D4E56A2395550A00574DD0 /* LoginVC.swift in Sources */,
 				51D4E4FA2395287000574DD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +598,7 @@
 		};
 		51D4E51F2395287300574DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869759CB47A39563691A2CBF /* Pods-kumu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +616,7 @@
 		};
 		51D4E5202395287300574DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CD816354710D451D5BB52D /* Pods-kumu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +634,7 @@
 		};
 		51D4E5222395287300574DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEDF3A767481709121576EC /* Pods-kumuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +655,7 @@
 		};
 		51D4E5232395287300574DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70152BE1BF5A2A3DBFDFE100 /* Pods-kumuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +676,7 @@
 		};
 		51D4E5252395287300574DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234ED963A7CBC70339F7A827 /* Pods-kumu-kumuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +696,7 @@
 		};
 		51D4E5262395287300574DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3884F13BC8B9A68B516A726 /* Pods-kumu-kumuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
