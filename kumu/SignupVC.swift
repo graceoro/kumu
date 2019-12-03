@@ -22,12 +22,14 @@ class SignupVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var createAccountButton: UIButton!
     @IBOutlet weak var errorMessageLabel: UILabel!
-    
+    @IBOutlet weak var navBar: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        createAccountButton.layer.cornerRadius = 20
+        
         errorMessageLabel.text = ""
         
         enableSignUpButton(enabled: false)

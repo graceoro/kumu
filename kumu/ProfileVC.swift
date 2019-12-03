@@ -27,6 +27,9 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        editProfileButton.layer.cornerRadius = 20
+        logoutButton.layer.cornerRadius = 20
+        profilePicImage.layer.cornerRadius = profilePicImage.frame.size.width/2
     }
     
     override func didReceiveMemoryWarning() {

@@ -22,6 +22,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         loginButton.layer.cornerRadius = 30
         signupButton.layer.cornerRadius = 30
+        emailTF.layer.cornerRadius = 10
+        emailTF.layer.borderWidth = 0.5
+        emailTF.layer.borderColor = UIColor.lightGray.cgColor
+        
+        passwordTF.layer.cornerRadius = 10
+        passwordTF.layer.borderWidth = 0.5
+        passwordTF.layer.borderColor = UIColor.lightGray.cgColor
         
         errorMessageLabel.text = ""
         // Do any additional setup after loading the view.
