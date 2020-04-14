@@ -13,7 +13,6 @@ import FirebaseDatabase
 class SignupVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstNameTF: UITextField!
-    @IBOutlet weak var lastNameTF: UITextField!
     @IBOutlet weak var yearTF: UITextField!
     @IBOutlet weak var majorTF: UITextField!
     @IBOutlet weak var minorTF: UITextField!
@@ -23,6 +22,10 @@ class SignupVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var createAccountButton: UIButton!
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var navBar: UINavigationItem!
+    
+    //var ref: DatabaseReference!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,6 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         
         // declare delegates
         firstNameTF.delegate = self
-        lastNameTF.delegate = self
         yearTF.delegate = self
         majorTF.delegate = self
         minorTF.delegate = self
@@ -45,9 +47,8 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         
         // observe text fields to enable sign up button when appropriate
         firstNameTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        lastNameTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-//        yearTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-//        majorTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        yearTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        majorTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
@@ -65,7 +66,6 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         
         // resign first responder fo all text fields
         firstNameTF.resignFirstResponder()
-        lastNameTF.resignFirstResponder()
         emailTF.resignFirstResponder()
         passwordTF.resignFirstResponder()
     }
@@ -78,7 +78,9 @@ class SignupVC: UIViewController, UITextFieldDelegate {
     @IBAction func backgroundTouched(_ sender: Any) {
         // background button to dismiss keyboard
         self.firstNameTF.resignFirstResponder()
-        self.lastNameTF.resignFirstResponder()
+        self.yearTF.resignFirstResponder()
+        self.majorTF.resignFirstResponder()
+        self.minorTF.resignFirstResponder()
         self.emailTF.resignFirstResponder()
         self.passwordTF.resignFirstResponder()
     }
@@ -88,8 +90,8 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         
         // check if form is filled (bool)
         let formFilled = firstNameTF.text != nil && firstNameTF.text != ""
-                    && lastNameTF.text != nil && lastNameTF.text != ""
-//                    && yearTF.text != nil && yearTF.text != ""
+                    && yearTF.text != nil && yearTF.text != ""
+                    && majorTF.text != nil && majorTF.text != ""
                     && emailTF.text != nil && emailTF.text != ""
                     && passwordTF.text != nil && passwordTF.text != ""
         
@@ -129,8 +131,14 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         // get text from text fields
 //        guard let firstName = firstNameTF.text else { return }
 //        guard let lastName = lastNameTF.text else { return }
-        guard let firstName = firstNameTF.text, let lastName = lastNameTF.text else { return }
-        let fullName = firstName + lastName
+        guard let fullName = firstNameTF.text else { return }
+        guard let year = yearTF.text else { return }
+        guard let major = majorTF.text else { return }
+//        guard let minor = minorTF.text else { return }
+        var minor = minorTF.text ?? "none"
+        if minorTF.text?.count == 0 {
+            minor = "none"
+        }
         guard let email = emailTF.text else { return }
         guard let pass = passwordTF.text else { return }
         
@@ -138,9 +146,80 @@ class SignupVC: UIViewController, UITextFieldDelegate {
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             // if user is not nil and error is nil
             if error == nil && user != nil {
-                
                 // print status
                 print("User created successfully")
+                
+                let user = Auth.auth().currentUser
+                if let user = user {
+                    // The user's ID, unique to the Firebase project.
+//                    let uid = user.uid
+//                    let email = user.email
+//                    let displayName = user.displayName
+//                    let photoURL = user.photoURL
+                    
+                    
+                    /*
+                     "users": {
+                        "12345678": {
+                            "name": "grace orourke",
+                            "profilePic": "url",
+                            "collegeInfo": {
+                                 "year": "2020",
+                                 "major": "CS",
+                                 "minor": "none"
+                            }
+                            "classesTutoring": {
+                                 "0": "none",
+                                 "1": "CSCI 310"
+                            }
+                            "appointments": {
+                                 "0": "none",
+                                 "1": {
+                                     "tutor": "Miya Doniparthi",
+                                     "date": "Sept. 16, 2020",
+                                     "time": "7:00pm",
+                                     "location": "LVL 301",
+                                     "description": "Exam review"
+                                 }
+                     
+                            }
+
+                    */
+                    //self.ref = Database.database().reference()
+                    //self.ref.child("users").child(user.uid).setValue(["fullName": fullName])
+                    
+                    //let rootRef: DatabaseReference = Database.database().reference()
+                    
+                    var rootRef: DatabaseReference!
+                    rootRef = Database.database().reference()
+                    
+                    let userRef = rootRef.child("users").child(user.uid)
+                    userRef.child("name").setValue(fullName) {
+                        (error:Error?, ref:DatabaseReference) in
+                        if let error = error {
+                            print("Data could not be saved: \(error).")
+                        } else {
+                            print("Data saved successfully!")
+                        }
+                    }
+                    userRef.child("profPic").setValue("https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png")
+                    let collegeRef = userRef.child("collegeInfo")
+                    collegeRef.child("year").setValue(year)
+                    collegeRef.child("major").setValue(major)
+                    collegeRef.child("minor").setValue(minor)
+                    let tutoringRef = userRef.child("classesTutoringInfo")
+                    tutoringRef.child("0").setValue("none")
+                    let apptRef = userRef.child("appointments")
+                    apptRef.child("0").setValue("none")
+                    
+                    // test
+//                    let testing = userRef.child("appointments")
+//                    testing.child("test").setValue("test")
+//                    let testing2 = userRef.child("classesTutoringInfo")
+//                    testing2.updateChildValues(["test": "test"])
+                    
+                }
+                
                 
                 // create new user in database
 //                let newUser = Database.database().reference().child("users").child(user!.uid)
@@ -150,12 +229,15 @@ class SignupVC: UIViewController, UITextFieldDelegate {
                 
                 // resign first responder
                 self.firstNameTF.resignFirstResponder()
-                self.lastNameTF.resignFirstResponder()
+                self.yearTF.resignFirstResponder()
+                self.majorTF.resignFirstResponder()
+                self.minorTF.resignFirstResponder()
                 self.emailTF.resignFirstResponder()
                 self.passwordTF.resignFirstResponder()
                 
                 // switch to success view controller
-                Helper.helper.switchVC(VC: "ProfileVC")
+//                Helper.helper.switchVC(VC: "ProfileVC")
+                Helper.helper.switchVC(VC: "tabBarControllerID")
             } else {
                 // print error
                 print("Error: \(error!.localizedDescription)")

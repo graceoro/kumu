@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1B1A60CF7C7915D2BE7F75E4 /* Pods_kumuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E06BBFFDB1944AA24E29099 /* Pods_kumuTests.framework */; };
+		5107F1DF23A2E32600693444 /* SearchPgaeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F1DE23A2E32600693444 /* SearchPgaeTableViewCell.swift */; };
+		5107F1E123A2E41700693444 /* AppointmentsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F1E023A2E41700693444 /* AppointmentsTableVC.swift */; };
+		5107F1E323A2E45500693444 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F1E223A2E45500693444 /* EditProfileVC.swift */; };
+		5107F1E523A2E4A000693444 /* EditClassesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107F1E423A2E4A000693444 /* EditClassesVC.swift */; };
+		51689B0A239FE41C00E456E2 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51689B09239FE41C00E456E2 /* SearchResultVC.swift */; };
+		51689B0C23A27F5400E456E2 /* makeAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51689B0B23A27F5400E456E2 /* makeAppointmentVC.swift */; };
+		51689B0E23A283F000E456E2 /* ViewAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51689B0D23A283F000E456E2 /* ViewAppointmentVC.swift */; };
+		51689B1323A2E1FE00E456E2 /* SearchPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51689B1223A2E1FE00E456E2 /* SearchPageVC.swift */; };
+		51ADAE8323A3F0740032F467 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADAE8223A3F0740032F467 /* Account.swift */; };
+		51ADAE8523A3F08A0032F467 /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADAE8423A3F08A0032F467 /* AccountsModel.swift */; };
+		51ADAE8723A3F09F0032F467 /* AccountsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADAE8623A3F09F0032F467 /* AccountsDataModel.swift */; };
 		51D4E4FA2395287000574DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4E4F92395287000574DD0 /* AppDelegate.swift */; };
 		51D4E4FF2395287000574DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E4FD2395287000574DD0 /* Main.storyboard */; };
 		51D4E5012395287300574DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D4E5002395287300574DD0 /* Assets.xcassets */; };
@@ -47,6 +58,17 @@
 		0E06BBFFDB1944AA24E29099 /* Pods_kumuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kumuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1203862D90FA7F8F63AB5469 /* Pods_kumu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kumu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		234ED963A7CBC70339F7A827 /* Pods-kumu-kumuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kumu-kumuUITests.debug.xcconfig"; path = "Target Support Files/Pods-kumu-kumuUITests/Pods-kumu-kumuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5107F1DE23A2E32600693444 /* SearchPgaeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPgaeTableViewCell.swift; sourceTree = "<group>"; };
+		5107F1E023A2E41700693444 /* AppointmentsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableVC.swift; sourceTree = "<group>"; };
+		5107F1E223A2E45500693444 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		5107F1E423A2E4A000693444 /* EditClassesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClassesVC.swift; sourceTree = "<group>"; };
+		51689B09239FE41C00E456E2 /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
+		51689B0B23A27F5400E456E2 /* makeAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeAppointmentVC.swift; sourceTree = "<group>"; };
+		51689B0D23A283F000E456E2 /* ViewAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAppointmentVC.swift; sourceTree = "<group>"; };
+		51689B1223A2E1FE00E456E2 /* SearchPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageVC.swift; sourceTree = "<group>"; };
+		51ADAE8223A3F0740032F467 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		51ADAE8423A3F08A0032F467 /* AccountsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
+		51ADAE8623A3F09F0032F467 /* AccountsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDataModel.swift; sourceTree = "<group>"; };
 		51D4E4F62395287000574DD0 /* kumu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kumu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D4E4F92395287000574DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D4E4FE2395287000574DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +131,76 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5107F1E623A2E4DF00693444 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				51D4E5692395550A00574DD0 /* LoginVC.swift */,
+				51D4E56D2395558C00574DD0 /* SignupVC.swift */,
+				51D4E56F2395B11500574DD0 /* Helper.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5107F1E723A2E50100693444 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				51689B1223A2E1FE00E456E2 /* SearchPageVC.swift */,
+				5107F1DE23A2E32600693444 /* SearchPgaeTableViewCell.swift */,
+				51689B09239FE41C00E456E2 /* SearchResultVC.swift */,
+				51689B0B23A27F5400E456E2 /* makeAppointmentVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5107F1E823A2E53400693444 /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				51689B0D23A283F000E456E2 /* ViewAppointmentVC.swift */,
+				5107F1E023A2E41700693444 /* AppointmentsTableVC.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		5107F1E923A2E56D00693444 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				51D4E56B2395557700574DD0 /* ProfileVC.swift */,
+				5107F1E223A2E45500693444 /* EditProfileVC.swift */,
+				5107F1E423A2E4A000693444 /* EditClassesVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		51689B0F23A2E0AD00E456E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51ADAE8223A3F0740032F467 /* Account.swift */,
+				51ADAE8423A3F08A0032F467 /* AccountsModel.swift */,
+				51ADAE8623A3F09F0032F467 /* AccountsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51689B1023A2E0B100E456E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51D4E4FD2395287000574DD0 /* Main.storyboard */,
+				51D4E5002395287300574DD0 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51689B1123A2E0B500E456E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5107F1E623A2E4DF00693444 /* Login */,
+				5107F1E723A2E50100693444 /* Search */,
+				5107F1E823A2E53400693444 /* Appointments */,
+				5107F1E923A2E56D00693444 /* Profile */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		51D4E4ED2395287000574DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -134,16 +226,13 @@
 		51D4E4F82395287000574DD0 /* kumu */ = {
 			isa = PBXGroup;
 			children = (
+				51689B1123A2E0B500E456E2 /* Controller */,
+				51689B1023A2E0B100E456E2 /* View */,
+				51689B0F23A2E0AD00E456E2 /* Model */,
 				51D4E4F92395287000574DD0 /* AppDelegate.swift */,
-				51D4E4FD2395287000574DD0 /* Main.storyboard */,
-				51D4E56F2395B11500574DD0 /* Helper.swift */,
-				51D4E56D2395558C00574DD0 /* SignupVC.swift */,
-				51D4E56B2395557700574DD0 /* ProfileVC.swift */,
-				51D4E5002395287300574DD0 /* Assets.xcassets */,
 				51D4E5022395287300574DD0 /* LaunchScreen.storyboard */,
 				51D4E5052395287300574DD0 /* Info.plist */,
 				51D4E56523953A7200574DD0 /* GoogleService-Info.plist */,
-				51D4E5692395550A00574DD0 /* LoginVC.swift */,
 			);
 			path = kumu;
 			sourceTree = "<group>";
@@ -421,11 +510,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5107F1DF23A2E32600693444 /* SearchPgaeTableViewCell.swift in Sources */,
+				51689B0C23A27F5400E456E2 /* makeAppointmentVC.swift in Sources */,
 				51D4E56E2395558C00574DD0 /* SignupVC.swift in Sources */,
 				51D4E56C2395557700574DD0 /* ProfileVC.swift in Sources */,
+				5107F1E123A2E41700693444 /* AppointmentsTableVC.swift in Sources */,
 				51D4E5702395B11500574DD0 /* Helper.swift in Sources */,
+				51689B0A239FE41C00E456E2 /* SearchResultVC.swift in Sources */,
+				51689B0E23A283F000E456E2 /* ViewAppointmentVC.swift in Sources */,
 				51D4E56A2395550A00574DD0 /* LoginVC.swift in Sources */,
+				51ADAE8523A3F08A0032F467 /* AccountsModel.swift in Sources */,
+				5107F1E523A2E4A000693444 /* EditClassesVC.swift in Sources */,
 				51D4E4FA2395287000574DD0 /* AppDelegate.swift in Sources */,
+				5107F1E323A2E45500693444 /* EditProfileVC.swift in Sources */,
+				51ADAE8723A3F09F0032F467 /* AccountsDataModel.swift in Sources */,
+				51689B1323A2E1FE00E456E2 /* SearchPageVC.swift in Sources */,
+				51ADAE8323A3F0740032F467 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

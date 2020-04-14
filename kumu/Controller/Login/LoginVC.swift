@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class LoginVC: UIViewController, UITextFieldDelegate {
 
@@ -16,6 +17,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
+    
+    var handle: AuthStateDidChangeListenerHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,15 +51,18 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         super.viewDidAppear(animated)
         
         // check if user is already logged in
-        Auth.auth().addStateDidChangeListener({ (auth: Auth, user: User?) in
+        // attach listener
+        handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             
             // if authenticated
-            if user != nil {
+//            if user != nil {
+            if let user = user {
                 // print message
                 print("User is already logged in")
                 
                 // automatically switch to success view
-                Helper.helper.switchVC(VC: "ProfileVC")
+//                Helper.helper.switchVC(VC: "ProfileVC")
+                Helper.helper.switchVC(VC: "tabBarControllerID")
             } else {
                 print("Not logged in.")
             }
@@ -65,6 +71,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        // detach the listener
+        Auth.auth().removeStateDidChangeListener(handle!)
         
         // resign first responder fo all text fields
         emailTF.resignFirstResponder()
@@ -137,23 +145,39 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         guard let email = emailTF.text else { return }
         guard let pass = passwordTF.text else { return }
         
+        /*
         // log in with password
         Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
             // if login is not successful (error != nil)
             if error != nil {
                 // print error
                 print(error!.localizedDescription)
-                
                 // display error
                 self.errorMessageLabel.text = error!.localizedDescription
-                
                 // return
                 return
             } else {
                 // switch to success view
-                Helper.helper.switchVC(VC: "ProfileVC")
+//                Helper.helper.switchVC(VC: "ProfileVC")
+                Helper.helper.switchVC(VC: "tabBarControllerID")
             }
         }
+ */
+   
+        // [START headless_email_auth]
+        Auth.auth().signIn(withEmail: email, password: pass) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            // [START_EXCLUDE]
+            if let error = error {
+                strongSelf.errorMessageLabel.text = error.localizedDescription
+                return
+            }
+            Helper.helper.switchVC(VC: "tabBarControllerID")
+            
+            // [END_EXCLUDE]
+        }
+        // [END headless_email_auth]
+        
         
     }
     /*

@@ -18,14 +18,22 @@ class Helper {
         // create main storyboard instance
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        /*
         // from main storyboard, instantiate success view
         let newVC = storyboard.instantiateViewController(withIdentifier: VC)
-        
         // get the app delegate
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         // set the success view controller as root view controller
         appDelegate.window?.rootViewController = newVC
+        */
+        
+         let appDelegate = UIApplication.shared.delegate! as! AppDelegate
+         
+         let initialViewController = storyboard.instantiateViewController(withIdentifier: VC)
+         appDelegate.window?.rootViewController = initialViewController
+         appDelegate.window?.makeKeyAndVisible()    // added
+         
+         
     }
     
     // log out function
